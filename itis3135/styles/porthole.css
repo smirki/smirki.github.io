@@ -1,0 +1,158 @@
+.w450 {
+    width: 450px;
+  }
+  
+  .bg-grey {
+    background: #f1f1f1;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  
+  .glass {
+    height: 400px;
+    top: 17px;
+    backdrop-filter: blur(0.5px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .window {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+  }
+  .window .window-view {
+    background: linear-gradient(to bottom, black, black, #1a4d64);
+    width: 1250px;
+  }
+  .window .window-view .star {
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    box-shadow: 0px 0px 10px red;
+    border-radius: 50%;
+    position: absolute;
+    animation: slide 150s linear infinite;
+  }
+  .window .window-view .star1 {
+    left: 10%;
+    top: 10%;
+  }
+  .window .window-view .star2 {
+    left: 30%;
+    top: 15%;
+  }
+  .window .window-view .star3 {
+    left: 50%;
+    top: 20%;
+  }
+  .window .window-view .star4 {
+    left: 70%;
+    top: 35%;
+  }
+  .window .window-view .star5 {
+    left: 100%;
+    top: 40%;
+  }
+  .window .window-view .star6 {
+    left: 140%;
+    top: 15%;
+  }
+  .window .window-view .star7 {
+    left: 20%;
+    top: 27%;
+  }
+  .window .window-view .star8 {
+    left: 120%;
+    top: 5%;
+  }
+  .window .window-view .star9 {
+    left: 95%;
+    top: 5%;
+  }
+  .window .window-view .wave {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    box-shadow: 0px 0px 10px whitesmoke;
+    width: 2000px;
+    height: 150px;
+    transform: translate(-10%, -30%, 0);
+    opacity: 0.8;
+    bottom: 0;
+  }
+  .window .window-view .wave:nth-child(1n) {
+    bottom: -15px;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+  }
+  .window .window-view .wave:nth-child(2n) {
+    bottom: -5px;
+    animation: wave2 20s -1s reverse infinite;
+    opacity: 0.9;
+  }
+  .window .window-view .wave:nth-child(3n) {
+    bottom: -20px;
+    animation: wave3 20s -1s reverse infinite;
+    opacity: 0.9;
+  }
+  @keyframes wave {
+    0% {
+      transform: translate(-10%, 30%);
+    }
+    25% {
+      transform: translate(-25%, 15%);
+    }
+    50% {
+      transform: translate(-30%, 0%);
+    }
+    25% {
+      transform: translate(-25%, 15%);
+    }
+    100% {
+      transform: translate(-10%, 30%);
+    }
+  }
+  @keyframes wave2 {
+    0% {
+      transform: translate(-10%, 50%);
+    }
+    25% {
+      transform: translate(-25%, 25%);
+    }
+    50% {
+      transform: translate(-30%, 20%);
+    }
+    25% {
+      transform: translate(-25%, 25%);
+    }
+    100% {
+      transform: translate(-10%, 50%);
+    }
+  }
+  @keyframes wave3 {
+    0% {
+      transform: translate(-10%, 20%);
+    }
+    25% {
+      transform: translate(-25%, 15%);
+    }
+    50% {
+      transform: translate(-50%, 0%);
+    }
+    25% {
+      transform: translate(-25%, 15%);
+    }
+    100% {
+      transform: translate(-10%, 20%);
+    }
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-800px, 0, 0);
+    }
+  }

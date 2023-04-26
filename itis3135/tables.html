@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manav Majumdar's Majestic Megalodon</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Manav Majumdar's Portfolio" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/porthole.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+    
+            th,
+            td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+    
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+    
+            tr:nth-child(odd) {
+                background-color: #ffffff;
+            }
+    
+            caption {
+                font-weight: bold;
+            }
+    
+            /* New styles */
+            thead {
+                background-color: #4CAF50;
+                color: grey;
+            }
+    
+            tfoot {
+                background-color: #f44336;
+                color: brown;
+            }
+        </style>
+        <script> 
+            $(function(){
+              $("#header-main").load("widgets/navbar.html");
+              $("#pothole").load("widgets/pothole.html"); 
+              $("#footer").load("footer.html"); 
+            });
+        </script> 
+    </head>
+    <body class="light" id="top">
+        <header id="header-main" class="header center">
+        </header>
+        <main>
+            <h2>HTML Tables</h2>
+    
+            <!-- Part 2 -->
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>D.I. von Briesen dvonbri1@uncc.edu 1</li>
+                <li>Esam Abdullah eabdullah@gmail.com 31</li>
+                <li>Medina Gomez gomez_med8@yahoo.com 3</li>
+                <li>Demi Lovato demilovato@gmail.com 8</li>
+                <li>Miley Cyrus mileycyrus@yahoo.com 15</li>
+                <li>Zac Efron zacefron@hotmail.com 12</li>
+                <li>Selena Gomez selenagomez@gmail.com 10</li>
+                <li>Vanessa Hudgens vanessahudgens@gmail.com 9</li>
+                <li>Ashley Tisdale ashleytisdale@yahoo.com 7</li>
+                <li>Hilary Duff hilaryduff@hotmail.com 18</li>
+                <!-- Add more list items as needed -->
+            </ol>
+    
+            <!-- Part 3 -->
+            <h3>Employee Data in Simple Table</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Years of Service</th>
+    </tr>
+    <tr>
+        <td>D.I. von Briesen</td>
+        <td>dvonbri1@uncc.edu</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Esam Abdullah</td>
+        <td>eabdullah@gmail.com</td>
+        <td>31</td>
+    </tr>
+    <tr>
+        <td>Medina Gomez</td>
+        <td>gomez_med8@yahoo.com</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Demi Lovato</td>
+        <td>demilovato@gmail.com</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>Miley Cyrus</td>
+        <td>mileycyrus@yahoo.com</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Zac Efron</td>
+        <td>zacefron@hotmail.com</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>Selena Gomez</td>
+        <td>selenagomez@gmail.com</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Vanessa Hudgens</td>
+        <td>vanessahudgens@gmail.com</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>Ashley Tisdale</td>
+        <td>ashleytisdale@yahoo.com</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>Hilary Duff</td>
+        <td>hilaryduff@hotmail.com</td>
+        <td>18</td>
+    </tr>
+    <!-- Add more table rows as needed -->
+</table>
+
+    
+            <!-- Part 4 -->
+            <h3>Employee Data in Complex Table</h3>
+<figure>
+    <table>
+        <caption>Employee Information</caption>
+        <thead>
+            <tr>
+                <th id="category">Category</th>
+                <th id="name">Name</th>
+                <th id="email">Email</th>
+                <th id="years">Years of Service</th>
+                <th id="salary">Monthly Salary</th>
+            </tr>
+        </thead>
+        
+        <tr>
+            <td headers="category">Bosses</td>
+            <td headers="name">D.I. von Briesen</td>
+            <td headers="email">dvonbri1@uncc.edu</td>
+            <td headers="years">1</td>
+            <td headers="salary">$1,000,000.01</td>
+        </tr>
+        
+        <tr>
+            <td>Esam Abdullah</td>
+            <td>eabdullah@gmail.com</td>
+            <td headers="boss-years">31</td>
+            <td headers="boss-salary">$25,000</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Minions</td>
+            <td>Medina Gomez</td>
+            <td>gomez_med8@yahoo.com</td>
+            <td headers="minion-years">3</td>
+            <td headers="minion-salary">$55,000</td>
+        </tr>
+        <tr>
+        <td rowspan="2">Sub Minions</td>
+        <td>John Smith</td>
+        <td>johnsmith@example.com</td>
+        <td headers="sub-minion-years">5</td>
+        <td headers="sub-minion-salary">$45,000</td>
+        </tr>
+        <tr>
+        <td>Jane Doe</td>
+        <td>janedoe@example.com</td>
+        <td headers="sub-minion-years">10</td>
+        <td headers="sub-minion-salary">$48,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1">Disney Stars</td>
+        <td>Demi Lovato</td>
+        <td>demilovato@gmail.com</td>
+        <td headers="disney-years">8</td>
+        <td headers="disney-salary">$20,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1"></td>
+        <td>Miley Cyrus</td>
+        <td>mileycyrus@yahoo.com</td>
+        <td headers="disney-years">15</td>
+        <td headers="disney-salary">$25,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1"></td>
+        <td>Zac Efron</td>
+        <td>zacefron@hotmail.com</td>
+        <td headers="disney-years">12</td>
+        <td headers="disney-salary">$23,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1"></td>
+        <td>Selena Gomez</td>
+        <td>selenagomez@gmail.com</td>
+        <td headers="disney-years">10</td>
+        <td headers="disney-salary">$20,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1"></td>
+        <td>Vanessa Hudgens</td>
+        <td>vanessahudgens@gmail.com</td>
+        <td headers="disney-years">9</td>
+        <td headers="disney-salary">$18,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1"></td>
+        <td>Ashley Tisdale</td>
+        <td>ashleytisdale@yahoo.com</td>
+        <td headers="disney-years">7</td>
+        <td headers="disney-salary">$16,000</td>
+        </tr>
+        <tr>
+        <td rowspan="1"></td>
+        <td>Hilary Duff</td>
+        <td>hilaryduff@hotmail.com</td>
+        <td headers="disney-years">18</td>
+        <td headers="disney-salary">$30,000</td>
+        </tr>
+        <tfoot>
+        <tr>
+        <th colspan="3">Total Years of Service</th>
+        <td>96</td>
+        <td>$1,216,000.01</td>
+        </tr>
+        </tfoot>
+        </table>
+        
+        </figure>
+            </main>
+        <footer class="footer">
+            Site designed by mmajumd1.
+            <a href="https://validator.w3.org/check?uri=referer">HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+        </footer>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
